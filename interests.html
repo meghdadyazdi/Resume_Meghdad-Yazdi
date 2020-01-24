@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		type="text/css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+		integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+		type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<title>Meghdad's CV</title>
+</head>
+
+<body>
+	<!--Hearder-->
+	<header>
+		<div class="row no-gutters">
+			<!--Bootstrap provides paddig for all col which is called gutter. To remove it we use class "no-gutters"-->
+			<a class="col-md-4 logo" href="index.html"></a>
+
+			<div class="col-md-8">
+				<div class="row no-gutters bg-color-name-title ">
+					<div class="col heading">
+						<!--Drirect child of bootstrap 'row' has to have a column class-->
+						<h1 class="name">Meghdad Yazdi</h1>
+						<h2 class="title">Full stack Developer</h2>
+					</div>
+				</div>
+
+				<div class="row no-gutters">
+					<div class="col">
+						<ul id="nav" class="list-inline menucontainer">
+							<li class="col-6 col-sm-2 list-inline-item ui-menu-color-home menuitem">
+								<a href="index.html"
+									class="hvr-fade"><i class="fas fa-home" aria-hidden="true"></i><span>Home</span></a>
+							</li>
+							<li class="col-6 col-sm-2 list-inline-item ui-menu-color-resume menuitem">
+								<a href="resume.html"
+									class="hvr-fade"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
+							</li>
+							<li class="col-6 col-sm-2 list-inline-item ui-menu-color-contact menuitem">
+								<a href="contact.html"
+									class="hvr-fade"><i class="far fa-comments" aria-hidden="true"></i><span>Contact</span></a>
+							</li>
+							<li class="col-6 col-sm-2 ui-menu-color-interests list-inline-item menuitem">
+								<a href="interests.html"
+									class="hvr-fade"><i class="fa fa-users" aria-hidden="true"></i><span>Interests</span></a>
+							</li>
+							<li class="col-6 col-sm-2 ui-menu-color-github list-inline-item menuitem">
+								<a href="github.html"
+									class="hvr-fade"><i class="fab fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+							</li>
+							<li class="col-6 col-sm-2 list-inline-item ui-menu-color-download menuitem">
+								<a href="CV/CV_Meghdad_Yazdi.pdf" target="_blanck"
+									class="hvr-fade"><i class="fas fa-download" aria-hidden="true"></i><span>Download</span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</header>
+	<!--/Header-->
+
+
+
+
+	<section class="container-fluid">
+		<!-- <div class="row">
+			<div class="col-md-4 bg-color-conferences section-column">
+				<div class="row">
+					<div class="col-12">
+						<h3 class="section-heading uppercase">
+							Conferences And Meetups Attended
+						</h3>
+					</div>
+				</div> -->
+				<div id="map"></div>
+			<!-- </div>
+
+		</div> -->
+	</section>
+
+	<!--Footer-->
+	<footer class="container-fluid">
+		<div id="footer-details" class="row">
+			<div class="col-sm-4">
+				<h5 class="uppercase general-sub">About</h5>
+				<p class="inline-block">
+					Fullstack Web developer and physicist!
+				</p>
+			</div>
+			<div class="col-sm-4">
+				<h5 class="uppercase general-sub">Download</h5>
+				<p class="inline-block">
+					Need a printable vesrion of my CV? Downloaded it here
+					<a href="CV/CV_Meghdad_Yazdi.pdf" target="_blank" class="cv-pdf">
+						<i class="fas fa-download" aria-hidden="true"></i>
+						<span class="sr-only">Doanload link</span>
+					</a>
+				</p>
+			</div>
+			<div class="col-sm-4">
+				<h5 class="uppercase general-sub">Social</h5>
+				<ul class="list-inline social-link">
+					<li class="list-inline-item">
+						<a href="#" target="_blank">
+							<i class="fab fa-facebook-f" aria-hidden="true"></i>
+							<span class="sr-only">Facebook</span>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#" target="_blank">
+							<i class="fab fa-twitter" aria-hidden="true"></i>
+							<span class="sr-only">Twitter</span>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#" target="_blank">
+							<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+							<span class="sr-only">LinkedIn</span>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#" target="_blank">
+							<i class="fab fa-youtube" aria-hidden="true"></i>
+							<span class="sr-only">YouTube</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!--/Footer-->
+
+	
+
+
+
+	<script	src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+	<script async defer	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxvDS6hk8sB_ZE5W7X7oq3kue5TLe2NRM&callback=initMap"></script>
+    <script src="js/maps.js"></script>
+
+</body>
+
+</html>
